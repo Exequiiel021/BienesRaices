@@ -1,0 +1,52 @@
+@include tablet{
+    .seccion-inferior{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+.entrada-blog{
+    margin-bottom: 2rem;
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        column-gap: 2rem;
+    }
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+    
+}
+
+.texto-entrada{
+    a{
+        color: $negro;
+        margin-top: 2rem;
+        display: block; /*para poder pasar de inline a block, ya que todos los a son inline, sin esto no funcionara el margin top o button*/
+
+        @include tablet{
+            margin-top: 0;
+        }
+    }
+
+    h4{
+        margin: 0;
+        line-height: 1.4;
+
+        &::after{
+            content: "";
+            display: block;
+            width: 15rem;
+            height: 0.5rem;
+            background-color: $verde;
+            margin-top: 1rem;
+
+        }
+    }
+
+    span{
+        color: $amarillo;
+    }
+}
