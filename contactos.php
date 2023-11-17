@@ -1,43 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices</title>
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-
-<body>
-
-    <header class="header">
-        <div class="contenedor contenido-header">
-
-            <div class="barra">
-                <a href="/">
-                    <img src="build/img/logo.svg" alt="Logotipo-bienes raicez">
-                </a>
-
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="menu-barra">
-                </div>
-
-                <div class="derecha">
-                    <img src="build/img/dark-mode.svg" alt="modo-oscuro" class="dark-mode-boton">
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contactos.html">Contacto</a>
-                    </nav>
-                </div>
-
-            </div>
-
-            
-
-        </div>
-    </header>
+<?php
+   require './includes/funciones.php';
+    
+   incluirTemplates('header');
+?>
 
     <main class="contenedor seccion">
         <h1>Contacto</h1>
@@ -105,22 +70,7 @@
         </form>
     </main>
 
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contactos.html">Contacto</a>
-            </nav>
-        </div>
-
-        <p class="copyright">Todos los Derechos Reservados 2023</p>
-    </footer>
-
-
-
-    <script src="build/js/bundle.min.js"></script>
-</body>
-
-</html>
+    <?php
+    
+    incluirTemplates('footer');
+?>

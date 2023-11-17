@@ -6,22 +6,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function darkmode() {
 
-    const prefiereDarkMode = window.matchMedia('(prefers-color-scheme-dark)');
-    if (prefiereDarkMode.matches) {
-        document.body.classList.add('dark-mode');
-    } else {
+    const prefiereTemaClaro = window.matchMedia('(prefers-color-scheme: light)');
+    if (prefiereTemaClaro.matches) {
         document.body.classList.remove('dark-mode');
+    } else {
+        document.body.classList.add('dark-mode');
     }
 
-    prefiereDarkMode.addEventListener('change', function() {
-        if (prefiereDarkMode.matches) {
-            document.body.classList.add('dark-mode');
-        } else {
+    prefiereTemaClaro.addEventListener('change', function () {
+        if (prefiereTemaClaro.matches) {
             document.body.classList.remove('dark-mode');
+        } else {
+            document.body.classList.add('dark-mode');
         }
     });
 
-    
+
     const botonDark = document.querySelector('.dark-mode-boton');
 
 

@@ -11,7 +11,8 @@
 
         &::before{
             content: '';
-            background-image: url(../../../build/img/comilla.svg);
+            background-image: url('http://localhost/bienesraices/build/img/comilla.svg');
+            // ../../../build/img/comilla.svg
             background-repeat: no-repeat;
             height: 8rem;
             width: 6rem;
