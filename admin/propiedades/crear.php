@@ -128,7 +128,7 @@ incluirTemplates('header');
 <main class="contenedor seccion">
     <h1>Crear</h1>
 
-    <a href="../../admin/index.php" class="boton boton-verde">Volver</a>
+    <a href="http://localhost/bienesraices/admin/index.php" class="boton boton-verde">Volver</a>
 
     <?php foreach ($errores as $error) : ?>
         <div class="alerta error">
